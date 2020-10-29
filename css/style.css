@@ -1,0 +1,280 @@
+body {
+  font: 400 15px/1.8 Lato, sans-serif;
+  background: lightskyblue;
+}
+
+h1, h2, h3, h4, h5 {
+  color: red;
+  text-shadow: 2px 2px 2px black;
+}
+
+.container {
+  padding: 1px 1px;
+}
+
+.navbar {
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 0;
+  background: lightskyblue;
+  border: 1px solid white;
+  font-weight: 800;
+  font-size: 15px !important;
+  text-shadow: 2px 2px 2px black;
+  letter-spacing: 4px;
+  opacity: 1;
+}
+
+.navbar li a, .navbar .navbar-brand { 
+  color: white !important;
+}
+
+.navbar-nav li a:hover {
+  color: white !important;
+}
+
+.navbar-nav li.active a {
+  color: white !important;
+  background-color: white !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+.open .dropdown-toggle {
+  color: white;
+  background-color: blue !important;
+}
+
+.dropdown-menu li a {
+  color: white !important;
+}
+
+.dropdown-menu li a:hover {
+  background-color: red !important;
+}
+
+.list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.list-group-item:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+header {
+  margin-top: 57px;
+  width: 100%;
+  height: 180px;
+background: lightskyblue;
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 500px;
+  }
+}
+
+.carousel {
+  top: 8px;
+  width: 340px;
+  height: 170px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .carousel {
+    top: 8px;
+    width: 900px;
+    height: 350px;
+  }
+}
+
+.controls:hover {
+  opacity: 1;
+}
+
+.controls {
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  top: 37%;
+  justify-content: space-between;
+  width: 100%;
+  transition: all ease 0.5s;
+}
+
+.sign {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 1;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
+.sign:hover {
+  opacity: 1;
+}
+
+.products {
+  position: absolute;
+  top: 170px;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  width: 100%;
+  transition: 1s ease-in-out all;
+}
+
+.slide {
+  min-width: 100%;
+  min-height: 175px;
+}
+
+main {
+  background:lightskyblue;
+}
+
+.person {
+  border: 10px solid transparent;
+  margin-bottom: 25px;
+  width: 80%;
+  height: 80%;
+  opacity: 1;
+}
+
+.person:hover {
+  border-color: white;
+}
+
+.bg-1 {
+  background: lightskyblue;
+  color: black;
+}
+
+.bg-1 h3 {
+  color: white;
+}
+
+.bg-1 p {
+  font-weight: 800;
+}
+
+.thumbnail {
+  padding: 1px 1px 15px 1px;
+  border: none;
+  border-radius: 0;
+}
+
+.thumbnail p {
+  margin-top: 15px;
+  color: green;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  transition: .2s;
+}
+
+.btn:hover {
+  background-color: blue;
+  color: white;
+}
+
+.modal-header, h4, .close {
+  background-color: green;
+  color: white !important;
+  text-align: center;
+  font-size: 35px;
+}
+
+.modal-header, .modal-body {
+  padding: 40px 50px;
+}
+
+.nav-tabs li a {
+  color: blue;
+}
+
+section {
+  background: lightskyblue;
+}
+
+footer {
+  background: lightskyblue;
+  color: white;
+  padding: 32px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: black;
+  text-decoration: none;
+}  
+
+.logo-bar a {
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  transition: all 0.2s;
+}
+
+.logo-bar a:hover {
+    transform: scale(1.2);
+}
+
+.face {
+  background: hsl(221, 44%, 40%);
+  color: white;
+}
+
+.twit {
+  background: hsl(206, 82%, 60%);
+  color: white;
+}
+
+.inst {
+  background: hsl(315, 71%, 50%);
+  color: white;
+}
+
+.link {
+  background: blue;
+  color: white;
+}
+
+.yout {
+  background: hsl(0, 100%, 50%);
+  color: white;
+}
+
+.snap {
+  background: hsl(60, 100%, 50%);
+  color: white;
+}
+
+.pint {
+  background: #C92228;
+  color: white;
+}
+
+#about {
+  margin-top: 100px;
+}
