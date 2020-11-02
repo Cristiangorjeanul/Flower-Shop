@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
  
   //Carousel
-  const time = 2500;
+  const time = 3500;
   const left = document.querySelector(".left");
   const right = document.querySelector(".right");
   const products = document.querySelector(".products");
