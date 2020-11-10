@@ -1,6 +1,6 @@
 body {
-  font: 400 15px/1.8 Lato, sans-serif;
   background: lightskyblue;
+  font-family: Montserrat, Lato, "Times New Roman", Times, serif;
 }
 
 h1,
@@ -9,7 +9,7 @@ h3,
 h4,
 h5 {
   color: red;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 1px 1px 1px black;
   text-align: center;
 }
 
@@ -18,15 +18,15 @@ h5 {
 }
 
 .navbar {
-  font-family: Montserrat, sans-serif;
   margin-bottom: 0;
   background: lightskyblue;
   border: 1px solid white;
   font-weight: 800;
   font-size: 15px !important;
-  text-shadow: 2px 2px 2px black;
-  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px black;
+  letter-spacing: 1px;
   opacity: 1;
+  height: 75px;
 }
 
 .navbar li a,
@@ -70,23 +70,96 @@ h5 {
   border-bottom-left-radius: 0;
 }
 
+nav a {
+  margin-left: 53px;
+  margin-top: -50px;
+}
+
+@media (min-width: 768px) {
+  nav a {
+    margin-left: 1px;
+    margin-top: 5px;
+  }
+}
+
 header {
-  margin-top: 57px;
+  margin-top: 77px;
   width: 100%;
-  height: 350px;
+  height: 390px;
   background: lightskyblue;
 }
 
 @media (min-width: 768px) {
   header {
-    height: 410px;
+    height: 390px;
+  }
+}
+
+.side-menu {
+  width: 20%;
+  height: 370px;
+  font-size: 12.5px;
+  float: left;
+  z-index: 20;
+  color: white;
+  background-color: rgb(2, 53, 2);
+  text-shadow: 1px 1px 1px black;
+}
+
+@media (min-width: 768px) {
+  .side-menu {
+    width: 15.5%;
+    height: 380px;
+  }
+}
+
+.side-menu ul {
+  margin-left: -35px;
+}
+
+@media (min-width: 768px) {
+  .side-menu ul {
+    margin-left: 1px;
+  }
+}
+
+.side-menu ul li {
+  list-style-type: none;
+  font-weight: bold;
+  margin-top: 18px;
+  cursor: pointer;
+}
+
+.side-menu ul li:hover {
+  color: orange;
+}
+
+.side-menu ul li ul {
+  display: none;
+  z-index: 10;
+}
+
+.side-menu ul li:hover ul {
+  display: block;
+  width: 80px;
+  height: 155px;
+  margin-top: -35px;
+  margin-left: 19.5%;
+  padding: 0 1px 1px 5px;
+  position: absolute;
+  background: rgb(2, 53, 2);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+  .side-menu ul li:hover ul {
+    margin-left: 12%;
   }
 }
 
 .carousel {
-  top: 23px;
-  width: 98%;
-  height: 220px;
+  width: 79%;
+  height: 380px;
   overflow: hidden;
   position: relative;
   margin: auto;
@@ -94,8 +167,7 @@ header {
 
 @media (min-width: 768px) {
   .carousel {
-    top: 1px;
-    height: 290px;
+    width: 84%;
   }
 }
 
@@ -184,7 +256,7 @@ main {
 
 .thumbnail p {
   margin-top: 15px;
-  color: green;
+  color: darkgreen;
 }
 
 .btn {
@@ -214,7 +286,7 @@ h4,
 }
 
 .nav-tabs li a {
-  color: blue;
+  color: red;
 }
 
 section {
@@ -228,12 +300,19 @@ footer {
 }
 
 footer a {
-  color: white;
+  color: darkgreen;
+  font-weight: 800;
+  text-decoration: none;
 }
 
 footer a:hover {
-  color: black;
+  color: darkgreen;
   text-decoration: none;
+}
+
+footer p {
+  color: red;
+  text-shadow: 1px 1px 1px black;
 }
 
 .logo-bar a {

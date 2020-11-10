@@ -1,6 +1,5 @@
-
-.flower {
-  width:290px;
+.flower2 {
+  width: 290px;
   height: 290px;
   margin: auto;
   padding-left: 35px;
@@ -16,7 +15,6 @@
   border-radius: 50%;
   position: absolute;
 }
-
 
 #petal1 {
   margin-left: 85px;

@@ -1,69 +1,20 @@
-.title {
-  width: 100%;
-  height: 101px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 45px;
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
-@media (min-width: 768px) {
-  .title {
-    margin-top: 85px;
-  }
-}
-
-h1 {
-  font-family: Arial narrow, Times new roman;
-  color: red;
-  font-size: 41px;
-  font-weight: 800;
-}
-
-#text1 {
-  margin-top: 95px;
-  margin-left: -20px;
-}
-
-@media (min-width: 768px) {
-  #text1 {
-    margin-top: 39px;
-  }
-}
-
-#text2 {
-  margin-top: 95px;
-  padding-left: 60px;
-}
-
-@media (min-width: 768px) {
-  #text2 {
-    margin-top: 39px;
-  }
-}
-
 #animation {
   position: absolute;
-  top: 7px;
   width: 90px;
-  height: 170px;
   margin: auto;
 }
 
 .flower1 {
   position: absolute;
   bottom: 1px;
-  left: 0;
+  left: 1px;
   right: 0;
-  margin: 0 auto;
   width: 50px;
   transform: rotate(180deg);
 }
 
 .grass {
-  width: 53px;
+  width: 35px;
   border-radius: 0 0 50% 50%;
   background-color: green;
   animation: grass 3.5s linear infinite;
@@ -86,7 +37,7 @@ h1 {
 
 .stem {
   position: absolute;
-  left: 25px;
+  left: 16px;
   width: 5px;
   height: 0px;
   background: linear-gradient(-90deg, #0d0, #0a0);
@@ -101,19 +52,19 @@ h1 {
     height: 0;
   }
   45% {
-    height: 59px;
+    height: 21px;
   }
   100% {
-    height: 59px;
+    height: 21px;
   }
 }
 
 .leaf {
   position: absolute;
-  width: 21px;
-  top: -10px;
-  left: 18px;
-  height: 35px;
+  width: 9px;
+  top: -5px;
+  left: 14px;
+  height: 15px;
   border-radius: 1% 100%;
   background: linear-gradient(70deg, #0e0, #0a0);
   transform-origin: bottom;
@@ -142,10 +93,10 @@ h1 {
 .leaf:before {
   position: absolute;
   content: "";
-  top: 27px;
-  left: -17px;
-  width: 24px;
-  height: 32px;
+  top: 12px;
+  left: -12px;
+  width: 12px;
+  height: 12px;
   border-radius: 1% 100%;
   background: linear-gradient(70deg, #0e0, #0a0);
   transform: rotate(110deg);
@@ -169,13 +120,13 @@ h1 {
 
 .center {
   position: absolute;
-  top: 80px;
-  left: 19px;
-  height: 18px;
-  width: 18px;
+  top: 40px;
+  left: 12px;
+  height: 12px;
+  width: 12px;
   border-radius: 50%;
   background-color: #f8d545;
-  box-shadow: 0 0 0 4px red, 0 0 8px 4px #444, inset 0 0 8px #fd0;
+  box-shadow: 0 0 0 4px orange, 0 0 8px 4px #444, inset 0 0 8px #fd0;
   opacity: 0;
   animation: flower 3.5s linear infinite;
 }
@@ -220,39 +171,39 @@ h1 {
   }
   50% {
     opacity: 1;
-    width: 45px;
+    width: 32px;
   }
   100% {
     opacity: 1;
-    width: 45px;
+    width: 32px;
   }
 }
 
 .petal-1 {
-  top: 86px;
-  left: 8px;
+  top: 35px;
+  left: 2px;
 }
 
 .petal-2 {
-  top: 77px;
-  left: -5px;
+  top: 27px;
+  left: -2px;
   transform: rotate(60deg);
 }
 
 .petal-3 {
-  top: 65px;
-  left: 1px;
+  top: 27px;
+  left: 5px;
   transform: rotate(120deg);
 }
 
 .petal-4 {
-  top: 65px;
-  left: 10px;
+  top: 29px;
+  left: 8px;
   transform: rotate(180deg);
 }
 
 .petal-5 {
-  top: 75px;
-  left: 14px;
+  top: 34px;
+  left: 5px;
   transform: rotate(240deg);
 }
