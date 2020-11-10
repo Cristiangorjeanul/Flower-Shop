@@ -125,7 +125,7 @@
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background-color: #f8d545;
+  background-color: white;
   box-shadow: 0 0 0 4px orange, 0 0 8px 4px #444, inset 0 0 8px #fd0;
   opacity: 0;
   animation: flower 3.5s linear infinite;
@@ -198,7 +198,7 @@
 
 .petal-4 {
   top: 29px;
-  left: 8px;
+  left: 7px;
   transform: rotate(180deg);
 }
 
