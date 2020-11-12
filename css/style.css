@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-  color: white;
+  color: red;
   padding: 25px;
   font-weight: 800;
   text-shadow: 1px 1px 1px black;
@@ -37,16 +37,16 @@ h5 {
 
 .navbar li a,
 .navbar .navbar-brand {
-  color: white !important;
+  color: red !important;
 }
 
 .navbar-nav li a:hover {
-  color: white !important;
+  color: red !important;
   background-color: white;
 }
 
 .navbar-nav li.active a {
-  color: white !important;
+  color: red !important;
   background-color: white !important;
 }
 
@@ -298,7 +298,7 @@ h4,
   color: red;
 }
 
-section {
+article {
   background: lightskyblue;
 }
 
