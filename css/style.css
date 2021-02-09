@@ -140,19 +140,18 @@ header {
 .side-menu {
   width: 21%;
   height: 179px;
-  font-size: 9px;
+  font-size: 10px;
   float: left;
   z-index: 20;
   color: white;
   background-color: rgb(2, 53, 2);
-  text-shadow: 1px 1px 1px black;
 }
 
 @media (min-width: 768px) {
   .side-menu {
-    font-size: 12px;
+    font-size: 10px;
     width: 15.9%;
-    height: 380px;
+    height: 370px;
   }
 }
 
@@ -209,7 +208,7 @@ header {
 
 .carousel {
   width: 78%;
-  height: 179px;
+  height: 183px;
   overflow: hidden;
   position: relative;
   margin: auto;
@@ -218,7 +217,7 @@ header {
 @media (min-width: 768px) {
   .carousel {
     width: 83%;
-    height: 380px;
+    height: 370px;
   }
 }
 
@@ -230,10 +229,16 @@ header {
   opacity: 0;
   display: flex;
   position: absolute;
-  top: 37%;
+  top: 25%;
   justify-content: space-between;
   width: 100%;
   transition: all ease 0.5s;
+}
+
+@media (min-width: 768px) {
+  .controls {
+    top: 37%;
+  }
 }
 
 .sign {
@@ -256,12 +261,20 @@ header {
 
 .products {
   position: absolute;
-  top: 170px;
+  top: 88px;
+  height: 183px;
   left: 0;
   transform: translateY(-50%);
   display: flex;
   width: 100%;
   transition: 1s ease-in-out all;
+}
+
+@media (min-width: 768px) {
+  .products {
+    top: 224px;
+    height: 447px;
+  }
 }
 
 .slide {
