@@ -208,7 +208,7 @@ header {
 
 .carousel {
   width: 78%;
-  height: 183px;
+  height: 180px;
   overflow: hidden;
   position: relative;
   margin: auto;
@@ -217,7 +217,7 @@ header {
 @media (min-width: 768px) {
   .carousel {
     width: 83%;
-    height: 370px;
+    height: 369.5px;
   }
 }
 

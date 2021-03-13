@@ -1,55 +1,30 @@
-document.addEventListener('DOMContentLoaded', function () {
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
-  //Flower  
-  var center = document.querySelector("#center");
-    var petal1 = document.querySelector("#petal1");
-    var petal2 = document.querySelector("#petal2");
-    var petal3 = document.querySelector("#petal3");
-    var petal4 = document.querySelector("#petal4");
-    var petal5 = document.querySelector("#petal5");
-    var petal6 = document.querySelector("#petal6");
-    var petal7 = document.querySelector("#petal7");
-    var petal8 = document.querySelector("#petal8");
-    var petal = document.querySelector(".petals");
-    
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
 
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-    setInterval(function () {
-        center.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    }, 1000);
+      // Store hash
+      var hash = this.hash;
 
-    setInterval(function () {
-        petal1.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    }, 1000);
-
-    setInterval(function () {
-        petal2.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    }, 1000);
-
-    setInterval(function () {
-        petal3.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    }, 1000);
-
-    setInterval(function () {
-        petal4.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    }, 1000);
-
-    setInterval(function () {
-        petal5.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    }, 1000);
-
-    setInterval(function () {
-        petal6.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    }, 1000);
-
-    setInterval(function () {
-        petal7.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    }, 1000);
-
-    setInterval(function () {
-        petal8.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    }, 1000);
-
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
    
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
 
-});
+  
+})

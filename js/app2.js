@@ -1,38 +1,49 @@
-document.addEventListener('DOMContentLoaded', function () {
- 
-  //Carousel
-  const time = 3500;
-  const left = document.querySelector(".left");
-  const right = document.querySelector(".right");
-  const products = document.querySelector(".products");
-  const carousel = products.childElementCount;
-  const maxLeft = (carousel - 1) * 100 * -1;
+$(function () {
 
-  let current = 0;
-
-  function changeSlide(next = true) {
-    if (next) {
-      current += current > maxLeft ? -100 : current * -1;
-    } else {
-      current = current < 0 ? current + 100 : maxLeft;
-    }
-    products.style.left = current + "%";
+  //Petals game
+  //Color transition 
+  $("#center, #petal1, #petal2, #petal3, #petal4, #petal5, #petal6, #petal7, #petal8").css("transition", "all 1s");
+  //Array with desired colors
+  var arr = ["red", "orange", "gold", "yellow", "blue", "cyan", "green", "lime", "purple", "pink", "magenta", "violet"];
+  //Background color change
+  function changeColor() {
+    $("#center").css({
+      backgroundColor: arr[parseInt(Math.random() * 12)]
+    });
+    $("#petal1").css({
+      backgroundColor: arr[parseInt(Math.random() * 12)]
+    });
+    $("#petal2").css({
+      backgroundColor: arr[parseInt(Math.random() * 12)]
+    });
+    $("#petal3").css({
+      backgroundColor: arr[parseInt(Math.random() * 12)]
+    });
+    $("#petal4").css({
+      backgroundColor: arr[parseInt(Math.random() * 12)]
+    });
+    $("#petal5").css({
+      backgroundColor: arr[parseInt(Math.random() * 12)]
+    });
+    $("#petal6").css({
+      backgroundColor: arr[parseInt(Math.random() * 12)]
+    });
+    $("#petal7").css({
+      backgroundColor: arr[parseInt(Math.random() * 12)]
+    });
+    $("#petal8").css({
+      backgroundColor: arr[parseInt(Math.random() * 12)]
+    });
   }
+  changeColor();
+  setInterval(changeColor, 1000);
+  //Removing clicked petals
+  var petals = $('.petals');
 
-  let autoChange = setInterval(changeSlide, time);
-  const restart = function () {
-    clearInterval(autoChange);
-    autoChange = setInterval(changeSlide, time);
-  };
+  petals.on("click", function () {
 
-  right.addEventListener("click", function () {
-    changeSlide();
-    restart();
-  });
+    $(this).remove(); //removing li element
 
-  left.addEventListener("click", function () {
-    changeSlide(false);
-    restart();
   });
 
 
